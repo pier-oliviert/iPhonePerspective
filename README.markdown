@@ -6,7 +6,7 @@ Chrome, Safari.
 2. Add the /stylesheets /images and /javascripts content to your project
 3. Profit!
 
-Within div.scebe, you have a div with a classname "screen". You can add anything you want in there and it will be rendered within the iPhone. It will also follow the perspective changes.
+Within div.scene, you have a div with a classname "screen". You can add anything you want in there and it will be rendered within the iPhone. It will also follow the perspective changes.
 
 # Todo
 - I would like to add a fallback support for Firefox and IE. I'll probably add it soon.
