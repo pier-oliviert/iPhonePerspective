@@ -2,7 +2,7 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
 /* CSS Document */
-/* line 5, ../sass/iphone.scss */
+/* line 6, /Users/pothibo/Develop/iPhonePerspective/src/sass/iphone.scss */
 .scene {
   position: relative;
   width: 400px;
@@ -11,7 +11,7 @@
   -webkit-perspective: 600;
   perspective: 600;
 }
-/* line 12, ../sass/iphone.scss */
+/* line 13, /Users/pothibo/Develop/iPhonePerspective/src/sass/iphone.scss */
 .scene .screen {
   position: absolute;
   top: 52px;
@@ -19,7 +19,7 @@
   z-index: 1;
   border-radius: 2px;
 }
-/* line 20, ../sass/iphone.scss */
+/* line 21, /Users/pothibo/Develop/iPhonePerspective/src/sass/iphone.scss */
 .scene .floor {
   position: absolute;
   top: 140px;
@@ -34,13 +34,13 @@
   -webkit-transform-style: flat;
   transform-style: flat;
 }
-/* line 35, ../sass/iphone.scss */
+/* line 36, /Users/pothibo/Develop/iPhonePerspective/src/sass/iphone.scss */
 .scene .shadow {
   position: absolute;
   top: -78px;
-  width: 180px;
+  width: 230px;
   height: 526px;
-  margin-left: 60px;
+  margin-left: 33px;
   margin-top: -560px;
   background: #000;
   border-radius: 20px;
@@ -48,16 +48,16 @@
   -moz-transform-origin: bottom;
   -webkit-transform-origin: bottom;
   transform-origin: bottom;
-  -moz-box-shadow: 0 60px 180px black, 0 60px 180px black, 0 -60px 180px black, 0 -60px 180px black, 30px 0 60px black, 30px 0 60px black, -30px 0 60px black, -30px 0 60px black, 0 0 90px black, 0 0 90px black, 30px 30px 90px black, 30px 30px 90px black, -30px 30px 90px black, -30px 30px 90px black, 30px -30px 90px black, 30px -30px 90px black, -30px -30px 90px black, -30px -30px 90px black;
-  -webkit-box-shadow: 0 60px 180px black, 0 60px 180px black, 0 -60px 180px black, 0 -60px 180px black, 30px 0 60px black, 30px 0 60px black, -30px 0 60px black, -30px 0 60px black, 0 0 90px black, 0 0 90px black, 30px 30px 90px black, 30px 30px 90px black, -30px 30px 90px black, -30px 30px 90px black, 30px -30px 90px black, 30px -30px 90px black, -30px -30px 90px black, -30px -30px 90px black;
-  box-shadow: 0 60px 180px black, 0 60px 180px black, 0 -60px 180px black, 0 -60px 180px black, 30px 0 60px black, 30px 0 60px black, -30px 0 60px black, -30px 0 60px black, 0 0 90px black, 0 0 90px black, 30px 30px 90px black, 30px 30px 90px black, -30px 30px 90px black, -30px 30px 90px black, 30px -30px 90px black, 30px -30px 90px black, -30px -30px 90px black, -30px -30px 90px black;
+  -moz-box-shadow: 0 30px 180px black, 0 -30px 180px black, 30px 0 30px black, -30px 0 30px black, 0 0 90px black, 30px 30px 90px black, -30px 30px 90px black, 30px -30px 90px black, -30px -30px 90px black, -30px -30px 90px black;
+  -webkit-box-shadow: 0 30px 180px black, 0 -30px 180px black, 30px 0 30px black, -30px 0 30px black, 0 0 90px black, 30px 30px 90px black, -30px 30px 90px black, 30px -30px 90px black, -30px -30px 90px black, -30px -30px 90px black;
+  box-shadow: 0 30px 180px black, 0 -30px 180px black, 30px 0 30px black, -30px 0 30px black, 0 0 90px black, 30px 30px 90px black, -30px 30px 90px black, 30px -30px 90px black, -30px -30px 90px black, -30px -30px 90px black;
   opacity: .3;
   -moz-transform: rotateX(75deg) skewX(-5deg);
   -webkit-transform: rotateX(75deg) skewX(-5deg);
   transform: rotateX(75deg) skewX(-5deg);
 }
 
-/* line 59, ../sass/iphone.scss */
+/* line 60, /Users/pothibo/Develop/iPhonePerspective/src/sass/iphone.scss */
 .iphone {
   position: absolute;
   top: 50%;
@@ -71,7 +71,7 @@
   border: 1px solid;
   border-color: #aeacaa;
 }
-/* line 71, ../sass/iphone.scss */
+/* line 72, /Users/pothibo/Develop/iPhonePerspective/src/sass/iphone.scss */
 .iphone div.bezel {
   border-radius: 37px;
   padding: 1px;
@@ -79,7 +79,7 @@
   height: 523px;
   background: #fff;
 }
-/* line 78, ../sass/iphone.scss */
+/* line 79, /Users/pothibo/Develop/iPhonePerspective/src/sass/iphone.scss */
 .iphone div.bezel .volume-control {
   position: absolute;
   top: 48px;
@@ -87,7 +87,7 @@
   width: 22px;
   height: 122px;
 }
-/* line 85, ../sass/iphone.scss */
+/* line 86, /Users/pothibo/Develop/iPhonePerspective/src/sass/iphone.scss */
 .iphone div.bezel .volume-control div.volume {
   width: 2px;
   padding: 3px 0 3px 1px;
@@ -100,7 +100,7 @@
   background-image: -ms-linear-gradient(#bdbcbc, #dedddc 6px, #777675 12px, #c0bfbe 17px, #a5a4a3 20px);
   background-image: linear-gradient(#bdbcbc, #dedddc 6px, #777675 12px, #c0bfbe 17px, #a5a4a3 20px);
 }
-/* line 92, ../sass/iphone.scss */
+/* line 93, /Users/pothibo/Develop/iPhonePerspective/src/sass/iphone.scss */
 .iphone div.bezel .volume-control div.volume div {
   width: 100%;
   height: 100%;
@@ -111,7 +111,7 @@
   background-image: -ms-linear-gradient(#ffffff 4px, #4c4947 9px, #d6d5d4 16px);
   background-image: linear-gradient(#ffffff 4px, #4c4947 9px, #d6d5d4 16px);
 }
-/* line 99, ../sass/iphone.scss */
+/* line 100, /Users/pothibo/Develop/iPhonePerspective/src/sass/iphone.scss */
 .iphone div.bezel .volume-control div.mute {
   width: 2px;
   height: 19px;
@@ -125,7 +125,7 @@
   background-image: -ms-linear-gradient(#908e8c, #a4a1a0 2px, #a6a4a3 11px, #8d8b8a 19px);
   background-image: linear-gradient(#908e8c, #a4a1a0 2px, #a6a4a3 11px, #8d8b8a 19px);
 }
-/* line 106, ../sass/iphone.scss */
+/* line 107, /Users/pothibo/Develop/iPhonePerspective/src/sass/iphone.scss */
 .iphone div.bezel .volume-control div.mute div {
   width: 100%;
   height: 100%;
@@ -136,7 +136,7 @@
   background-image: -ms-linear-gradient(#fefefe, #d0cfce 1px, #d3d1d0 14px, #a39f9d 16px, #eeedec 18px, #dedddb 19px);
   background-image: linear-gradient(#fefefe, #d0cfce 1px, #d3d1d0 14px, #a39f9d 16px, #eeedec 18px, #dedddb 19px);
 }
-/* line 115, ../sass/iphone.scss */
+/* line 116, /Users/pothibo/Develop/iPhonePerspective/src/sass/iphone.scss */
 .iphone div.bezel .power-control {
   position: absolute;
   top: -3px;
@@ -155,7 +155,7 @@
   background-image: -ms-linear-gradient(left, #858382, #cbc9c8 3px, #9b9897 6px, #b7b7b4 18px, #b4b2b1 32px, #d3d1d0 41px, #83807f 41px);
   background-image: linear-gradient(left, #858382, #cbc9c8 3px, #9b9897 6px, #b7b7b4 18px, #b4b2b1 32px, #d3d1d0 41px, #83807f 41px);
 }
-/* line 131, ../sass/iphone.scss */
+/* line 132, /Users/pothibo/Develop/iPhonePerspective/src/sass/iphone.scss */
 .iphone div.bezel div.inset {
   z-index: 2;
   position: absolute;
@@ -163,22 +163,22 @@
   height: 3px;
   background: #000;
 }
-/* line 137, ../sass/iphone.scss */
+/* line 138, /Users/pothibo/Develop/iPhonePerspective/src/sass/iphone.scss */
 .iphone div.bezel div.inset.left {
   bottom: 60px;
   left: -1px;
 }
-/* line 141, ../sass/iphone.scss */
+/* line 142, /Users/pothibo/Develop/iPhonePerspective/src/sass/iphone.scss */
 .iphone div.bezel div.inset.right {
   bottom: 64px;
   right: -1px;
 }
-/* line 146, ../sass/iphone.scss */
+/* line 147, /Users/pothibo/Develop/iPhonePerspective/src/sass/iphone.scss */
 .iphone div.bezel div.inset.top {
   top: -1px;
   left: 86px;
 }
-/* line 151, ../sass/iphone.scss */
+/* line 152, /Users/pothibo/Develop/iPhonePerspective/src/sass/iphone.scss */
 .iphone div.bezel div.inside {
   position: relative;
   border-radius: 36px;
@@ -189,7 +189,7 @@
   background: #000;
   overflow: hidden;
 }
-/* line 161, ../sass/iphone.scss */
+/* line 162, /Users/pothibo/Develop/iPhonePerspective/src/sass/iphone.scss */
 .iphone div.bezel div.inside .specular {
   position: absolute;
   top: 1px;
@@ -209,7 +209,7 @@
   -webkit-mask: -webkit-linear-gradient(top, white, rgba(0, 0, 0, 0) 50%);
   mask: linear-gradient(top, #ffffff, rgba(0, 0, 0, 0) 50%);
 }
-/* line 181, ../sass/iphone.scss */
+/* line 182, /Users/pothibo/Develop/iPhonePerspective/src/sass/iphone.scss */
 .iphone div.bezel div.inside div.camera {
   z-index: 200;
   margin-left: -4px;
@@ -229,7 +229,7 @@
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 200, ../sass/iphone.scss */
+/* line 201, /Users/pothibo/Develop/iPhonePerspective/src/sass/iphone.scss */
 .iphone div.bezel div.inside div.camera div.lens {
   position: relative;
   top: 2px;
@@ -242,7 +242,7 @@
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 212, ../sass/iphone.scss */
+/* line 213, /Users/pothibo/Develop/iPhonePerspective/src/sass/iphone.scss */
 .iphone div.bezel div.inside div.camera div.lens div.lensInr {
   position: absolute;
   top: 2px;
@@ -254,7 +254,7 @@
   -moz-border-radius: 1px;
   border-radius: 1px;
 }
-/* line 223, ../sass/iphone.scss */
+/* line 224, /Users/pothibo/Develop/iPhonePerspective/src/sass/iphone.scss */
 .iphone div.bezel div.inside div.camera div.lens div.ray {
   position: absolute;
   top: 3px;
@@ -263,7 +263,7 @@
   height: 2px;
   background-color: #1965ad;
 }
-/* line 230, ../sass/iphone.scss */
+/* line 231, /Users/pothibo/Develop/iPhonePerspective/src/sass/iphone.scss */
 .iphone div.bezel div.inside div.camera div.lens div.ray:first-child {
   position: absolute;
   top: 1px;
@@ -272,7 +272,7 @@
   height: 1px;
   background-color: #1965ad;
 }
-/* line 242, ../sass/iphone.scss */
+/* line 243, /Users/pothibo/Develop/iPhonePerspective/src/sass/iphone.scss */
 .iphone div.bezel div.inside div.earphone {
   position: absolute;
   top: 39px;
@@ -285,19 +285,19 @@
   -moz-border-radius: 6px;
   border-radius: 6px;
 }
-/* line 254, ../sass/iphone.scss */
+/* line 255, /Users/pothibo/Develop/iPhonePerspective/src/sass/iphone.scss */
 .iphone div.bezel div.inside div.earphone div.filter {
   position: relative;
   top: 3px;
   left: 2px;
   width: 44px;
   height: 6px;
-  background: url(earspeaker.gif);
+  background: url("../images/earspeaker.gif");
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 266, ../sass/iphone.scss */
+/* line 267, /Users/pothibo/Develop/iPhonePerspective/src/sass/iphone.scss */
 .iphone div.bezel div.inside .home-btn {
   position: absolute;
   top: 452px;
@@ -311,7 +311,7 @@
   background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 0) 30%, rgba(255, 255, 255, 0.4));
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 30%, rgba(255, 255, 255, 0.4));
 }
-/* line 278, ../sass/iphone.scss */
+/* line 279, /Users/pothibo/Develop/iPhonePerspective/src/sass/iphone.scss */
 .iphone div.bezel div.inside .home-btn:before {
   content: '';
   position: absolute;
@@ -322,7 +322,7 @@
   border: 2px solid #78787d;
   border-radius: 5px;
 }
-/* line 290, ../sass/iphone.scss */
+/* line 291, /Users/pothibo/Develop/iPhonePerspective/src/sass/iphone.scss */
 .iphone div.bezel div.inside div.screen {
   border: 1px solid #0c0d0c;
   position: absolute;
