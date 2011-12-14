@@ -1,0 +1,304 @@
+@import "compass/css3";
+@charset "UTF-8";
+/* CSS Document */
+
+.scene {
+  position: relative;
+  width: 400px;
+  height: 600px;
+  -moz-perspective: 600;
+  -webkit-perspective: 600;
+  perspective: 600;
+  .screen {
+    position: absolute;
+    top: 52px;
+    left: 48px;
+    z-index: 1;
+    border-radius: 2px;
+  }
+
+  .floor {
+    position: absolute;
+    top: 140px;
+    left: 100px;
+    z-index: 0;
+    width: 350px;
+    height: 200px;
+    -moz-transform: translateY(340px) rotateX(100deg);
+    -webkit-transform: translateY(340px) rotateX(100deg);
+    transform: translateY(340px) rotateX(100deg);
+    -moz-transform-style: flat;
+    -webkit-transform-style: flat;
+    transform-style: flat;
+  }
+
+  .shadow {
+    $width: 180px;
+    position: absolute;
+    top: -78px;
+    width: 180px;
+    height: 526px;
+    margin-left: 60px;
+    margin-top: -560px;
+    background: #000;
+    border-radius: 20px;
+    border: 2px solid #000;
+    -moz-transform-origin: bottom;
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+    -moz-box-shadow: 0 60px $width #000, 0 60px $width #000, 0 -60px $width #000, 0 -60px $width #000, 30px 0 60px #000, 30px 0 60px #000, -30px 0 60px #000, -30px 0 60px #000, 0 0 90px #000, 0 0 90px #000, 30px 30px 90px #000, 30px 30px 90px #000, -30px 30px 90px #000, -30px 30px 90px #000, 30px -30px 90px #000, 30px -30px 90px #000, -30px -30px 90px #000, -30px -30px 90px #000;
+    -webkit-box-shadow: 0 60px $width #000, 0 60px $width #000, 0 -60px $width #000, 0 -60px $width #000, 30px 0 60px #000, 30px 0 60px #000, -30px 0 60px #000, -30px 0 60px #000, 0 0 90px #000, 0 0 90px #000, 30px 30px 90px #000, 30px 30px 90px #000, -30px 30px 90px #000, -30px 30px 90px #000, 30px -30px 90px #000, 30px -30px 90px #000, -30px -30px 90px #000, -30px -30px 90px #000;
+    box-shadow: 0 60px $width #000, 0 60px $width #000, 0 -60px $width #000, 0 -60px $width #000, 30px 0 60px #000, 30px 0 60px #000, -30px 0 60px #000, -30px 0 60px #000, 0 0 90px #000, 0 0 90px #000, 30px 30px 90px #000, 30px 30px 90px #000, -30px 30px 90px #000, -30px 30px 90px #000, 30px -30px 90px #000, 30px -30px 90px #000, -30px -30px 90px #000, -30px -30px 90px #000;
+    opacity: .3;
+    -moz-transform: rotateX(75deg) skewX(-5deg);
+    -webkit-transform: rotateX(75deg) skewX(-5deg);
+    transform: rotateX(75deg) skewX(-5deg);
+  }
+}
+
+.iphone {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1000;
+  width: 266px;
+  height: 526px;
+  margin-left: -100px;
+  margin-top: -300px;
+  border-radius: 37px;
+  border: 1px solid;
+  border-color: #aeacaa;
+  div.bezel {
+    border-radius: 37px;
+    padding: 1px;
+    width: 264px;
+    height: 523px;
+    background: #fff;
+    
+    .volume-control {
+      position: absolute;
+      top: 48px;
+      left: -6px;
+      width: 22px;
+      height: 122px;
+      
+      div.volume {
+        width: 2px;
+        padding: 3px 0 3px 1px;
+        height: 13px;
+        margin-bottom: 27px;
+
+        @include background-image(linear-gradient(#bdbcbc, #dedddc 6px, #777675 12px, #c0bfbe 17px, #a5a4a3 20px));
+        div {
+          width: 100%;
+          height: 100%;
+          @include background-image(linear-gradient(#ffffff 4px, #4c4947 9px, #d6d5d4 16px));
+        }
+      }
+
+      div.mute {
+        width: 2px;
+        height: 19px;
+        padding: 2px 0px 2px 1px;
+        margin-bottom: 30px;
+        margin-left: 1px;
+        @include background-image(linear-gradient(#908e8c, #a4a1a0 2px, #a6a4a3 11px, #8d8b8a 19px));
+        div {
+          width: 100%;
+          height: 100%;
+
+          @include background-image(linear-gradient(#fefefe, #d0cfce 1px, #d3d1d0 14px, #a39f9d 16px, #eeedec 18px, #dedddb 19px));
+        }
+      }
+    }
+
+    .power-control {
+      position: absolute;
+      top: -3px;
+      right: 46px;
+      height: 1px;
+      width: 40px;
+      background: #000;
+
+      border-top: 1px solid #71716f;
+      border-right: 1px solid #979392;
+      border-bottom: 1px solid #7e7c7d;
+      border-left: 1px solid #a09f9b;
+
+      @include background-image(linear-gradient(left, #858382, #cbc9c8 3px, #9b9897 6px, #b7b7b4 18px, #b4b2b1 32px, #d3d1d0 41px, #83807f 41px));
+    }
+
+    div.inset {
+      z-index: 2;
+      position: absolute;
+      width: 3px;
+      height: 3px;
+      background: #000;
+      &.left {
+        bottom: 60px;
+        left: -1px;
+      }
+      &.right {
+        bottom: 64px;
+        right: -1px;
+      }
+
+      &.top {
+        top: -1px;
+        left: 86px;
+      }
+    }
+    div.inside {
+      position: relative;
+      border-radius: 36px;
+      border: 1px solid;
+      border-color: #aeacaa;
+      width: 262px;
+      height: 521px;
+      background: #000;
+      overflow: hidden;
+
+      .specular {
+        position: absolute;
+        top: 1px;
+        left: 1px;
+        z-index: 100;
+        width: 461px;
+        height: 588px;
+        border-radius: 18px;
+        background: -moz-linear-gradient(-30deg, rgba(255, 255, 255, .7), rgba(255, 255, 255, .4) 50%, rgba(255, 255, 255, 0) 50.1%) no-repeat;
+        background: -webkit-linear-gradient(-30deg, rgba(255, 255, 255, .7), rgba(255, 255, 255, .4) 50%, rgba(255, 255, 255, 0) 50.1%) no-repeat;
+        background: linear-gradient(-30deg, rgba(255, 255, 255, .7), rgba(255, 255, 255, .4) 50%, rgba(255, 255, 255, 0) 50.1%) no-repeat;
+        background-position: -350px -300px;
+        -moz-background-size: 1000px 1200px;
+        background-size: 1000px 1200px;
+        -webkit-background-size: 1000px 1200px;
+        -moz-mask: -moz-linear-gradient(top, #fff, rgba(#000, 0) 50%);
+        -webkit-mask: -webkit-linear-gradient(top, #fff, rgba(#000, 0) 50%);
+        mask: linear-gradient(top, #fff, rgba(#000, 0) 50%);
+      }
+
+      div.camera {
+        z-index: 200;
+        margin-left: -4px;
+        background: rgba(0, 0, 0, .3);
+        -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, .3) inset;
+        -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, .3) inset;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, .3) inset;
+        position: absolute;
+        top: 39px;
+        left: 85px;
+        width: 10px;
+        height: 10px;
+        border: 1px solid #303435;
+        background: -webkit-gradient(linear, left top, right top, from(#1b1b1b), to(#3e3f41));
+        background: -moz-linear-gradient(top, #1b1b1b, #3e3f41);
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+
+        div.lens {
+          position: relative;
+          top: 2px;
+          left: 2px;
+          width: 6px;
+          height: 6px;
+          background: -webkit-gradient(linear, left top, right bottom, from(#44528f), to(#323374));
+          background: -moz-linear-gradient(left, #44528f, #323374);
+          -webkit-border-radius: 3px;
+          -moz-border-radius: 3px;
+          border-radius: 3px;
+
+          div.lensInr {
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            width: 2px;
+            height: 2px;
+            background-color: #0c1427;
+            -webkit-border-radius: 1px;
+            -moz-border-radius: 1px;
+            border-radius: 1px;
+          }
+          div.ray {
+            position: absolute;
+            top: 3px;
+            left: 1px;
+            width: 1px;
+            height: 2px;
+            background-color: #1965ad;
+            &:first-child {
+              position: absolute;
+              top: 1px;
+              left: 4px;
+              width: 1px;
+              height: 1px;
+              background-color: #1965ad;
+            }
+          }
+        }
+      }
+
+      div.earphone {
+        position: absolute;
+        top: 39px;
+        right: 108px;
+        width: 48px;
+        height: 12px;
+        background: -webkit-gradient(linear, left top, left bottom, from(#111111), to(#1a1a1a));
+        background: -moz-linear-gradient(left, #111111, #1a1a1a);
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        border-radius: 6px;
+
+        div.filter {
+          position: relative;
+          top: 3px;
+          left: 2px;
+          width: 44px;
+          height: 6px;
+          background: url(earspeaker.gif);
+          -webkit-border-radius: 3px;
+          -moz-border-radius: 3px;
+          border-radius: 3px;
+        }
+      }
+      .home-btn {
+        position: absolute;
+        top: 452px;
+        left: 50%;
+        width: 50px;
+        height: 50px;
+        margin-left: -28px;
+        border: none;
+        border-radius: 40px;
+        background: -moz-linear-gradient(180deg, rgba(#000, 0) 30%, rgba(255, 255, 255, .4));
+        background: -webkit-linear-gradient(180deg, rgba(#000, 0) 30%, rgba(255, 255, 255, .4));
+        background: linear-gradient(180deg, rgba(#000, 0) 30%, rgba(255, 255, 255, .4));
+        &:before {
+          content: '';
+          position: absolute;
+          top: 17px; 
+          left: 18px;
+          width: 14px;
+          height: 14px;
+          border: 2px solid #78787d;
+          border-radius: 5px;
+        }
+      }
+
+      div.screen {
+        border: 1px solid #0c0d0c;
+        position: absolute;
+        overflow: hidden;
+        left: 16px;
+        top: 87px;
+        width: 228px;
+        height: 343px;
+        background: #fff;
+      }
+    }
+  }
+}
+
+
