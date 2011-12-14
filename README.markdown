@@ -24,7 +24,7 @@ If you need any help with setting your development project, you can reach me on 
 
 # Credits
 
-Thank you to [Tom Giannattasio](http://attasi.com/labs/ipad/) and [Dezine](http://re-dzine.net/demo/iphone4)/
+Thank you to [Tom Giannattasio](http://attasi.com/labs/ipad/) and [Dezine](http://re-dzine.net/demo/iphone4)
 
 I based my work around Tom's iPad and used Dezine's iPhone 4 as a reference. I also used some of his techniques for the speaker and camera lens.
 
