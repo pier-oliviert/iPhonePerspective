@@ -9,46 +9,75 @@
   <link href="stylesheets/iphone.css" media="screen, projection" rel="stylesheet" type="text/css" />
   <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
   <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/main.css" media="screen, projection" rel="stylesheet" type="text/css" />
   <!--[if IE]>
       <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
   <![endif]-->
 </head>
 
 <body>
-	<div class="scene">
-	  <div class="iphone" style="-webkit-transform: rotateX(-5.917333333333334deg) rotateY(-2.390625deg); ">
-	    <div class="bezel">
-	      <div class="power-control">
-        	<div></div>
-	      </div>
-	      <div class="volume-control">
-	        <div class="mute"><div></div></div>
-	        <div class="volume"><div></div></div>
-	        <div class="volume"><div></div></div>
-	      </div>
-	      <div class="inset top"></div>
-	      <div class="inset left"></div>
-	      <div class="inset right"></div>
-	      <div class="inside">
-	        <div class="camera">
-	          <div class="lens">
-	            <div class="lensInr"></div>
-	            <div class="ray"></div>
-        	    <div class="ray"></div>
-	          </div>
-        	</div>
-	        <div class="earphone">
-	          <div class="filter"></div>
-	        </div>
-        	<div class="specular" style="opacity: 0.41358906249999994; background-position: -390.234375px -553.6px; "></div>
-	        <div class="screen"></div>
-	        <button class="home-btn" style="background-image: -webkit-linear-gradient(180deg, transparent 50%, rgba(255, 255, 255, 0.046875) 50.1%, rgba(255, 255, 255, 0.269531)); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: initial initial; background-repeat: initial initial; "></button>
-	      </div>
-	    </div>
-	  </div>
-	  <div class="floor">
-	      <div class="shadow" style="-webkit-transform: rotateX(83.45333333333333deg) rotateY(2.390625deg) skewX(-15deg); "></div>
-	  </div>
+	<div class="wrapper">
+		<ol class="description">
+			<h2>iPhonePerspective</h2>
+			<li>iPhone 4 built using CSS3</li>
+			<li>Animating perspective using transforms</li>
+			<li>Perspective changing on mouse movements</li>
+			<li>You can add your iOS app screenshot, it will follow perspective</li>
+
+			<li class="github">Available on <a href="https://github.com/pothibo/iPhonePerspective">GitHub</a></li>
+
+			<div class="creator">
+				<a href="https://twitter.com/share?count=none&text=iPhone 4 created in CSS with perspective by @pothibo http://pothibo.github.com/iPhonePerspective/" class="twitter-share-button" data-lang="en">Tweet</a>
+				<iframe allowtransparency="true" frameborder="0" scrolling="no" src="https://platform.twitter.com/widgets/follow_button.html?screen_name=pothibo&show_count=false" style="width:300px; height:20px;"></iframe>
+			</div>
+		</ol>
+		<div class="scene">
+		  <div class="iphone" style="-webkit-transform: rotateX(-5.917333333333334deg) rotateY(-2.390625deg); ">
+		    <div class="bezel">
+		      <div class="power-control">
+			<div></div>
+		      </div>
+		      <div class="volume-control">
+			<div class="mute"><div></div></div>
+			<div class="volume"><div></div></div>
+			<div class="volume"><div></div></div>
+		      </div>
+		      <div class="inset top"></div>
+		      <div class="inset left"></div>
+		      <div class="inset right"></div>
+		      <div class="inside">
+			<div class="camera">
+			  <div class="lens">
+			    <div class="lensInr"></div>
+			    <div class="ray"></div>
+			    <div class="ray"></div>
+			  </div>
+			</div>
+			<div class="earphone">
+			  <div class="filter"></div>
+			</div>
+			<div class="specular" style="opacity: 0.41358906249999994; background-position: -390.234375px -553.6px; "></div>
+			<div class="screen"></div>
+			<button class="home-btn" style="background-image: -webkit-linear-gradient(180deg, transparent 50%, rgba(255, 255, 255, 0.046875) 50.1%, rgba(255, 255, 255, 0.269531)); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: initial initial; background-repeat: initial initial; "></button>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="floor">
+		      <div class="shadow" style="-webkit-transform: rotateX(83.45333333333333deg) rotateY(2.390625deg) skewX(-15deg); "></div>
+		  </div>
+		</div>
+
+		<ul class="credits">
+			<h2>Credits</h2>
+			<p>I am <a href="https://www.twitter.com/pothibo">Pier-Olivier Thibault</a> and I made this little project. It would have been impossible without the inspiration those 2 projects below gave me. Thank you!</p>
+			<li>Tom giannattasio's <a href="http://attasi.com/labs/ipad/">lightning effects</a></li>
+			<li>Re:Dzine's <a href="http://re-dzine.net/demo/iphone4/">iPhone 4 in CSS</a></li>
+		</ul>
 	</div>
+	<footer>
+	Supports:
+	</footer>
+
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 </body>
 </html>

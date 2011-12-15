@@ -69,6 +69,5 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 8, ../src/sass/screen.scss */
 .scene {
-  top: 100px;
   margin: 0 auto;
 }
