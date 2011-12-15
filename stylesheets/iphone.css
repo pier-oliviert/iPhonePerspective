@@ -192,9 +192,9 @@
   top: 1px;
   left: 1px;
   z-index: 100;
-  width: 461px;
+  width: 264px;
   height: 588px;
-  border-radius: 18px;
+  border-radius: 37px;
   background: -moz-linear-gradient(-30deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0) 50.1%) no-repeat;
   background: -webkit-linear-gradient(-30deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0) 50.1%) no-repeat;
   background: linear-gradient(-30deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0) 50.1%) no-repeat;
