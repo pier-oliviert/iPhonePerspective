@@ -63,10 +63,36 @@ div.creator p {
 	margin-top: 10px;
 }
 
+div.screen {
+	background-image: url('../images/home.png') !important;
+}
+
 footer {
-	background-color: black;
+	border-top: 1px solid #e3e3e3;
+	background-color: #131313;
 	position: absolute;
 	bottom: 0px;
 	width: 100%;
-	height: 50px;
+	height: 90px;
+
+	color: white;
+	text-shadow: 0;
+	font-size: 2.0em;
+}
+
+footer p {
+	margin: 0 20px 0 50px;
+	line-height: 90px;
+	float: left;
+
+	text-shadow: 0 -1px black;
+}
+
+footer img {
+	opacity: 0.25;
+	margin-top: 15px;
+}
+
+footer img.supported {
+	opacity: 1;
 }
