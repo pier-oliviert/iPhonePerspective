@@ -36,6 +36,10 @@ ol.description, ul.credits {
 	margin-top: 140px;
 }
 
+ol.description {
+	margin-left: 25px;
+}
+
 ul.credits {
 	width: 350px;
 	padding-left: 60px;
