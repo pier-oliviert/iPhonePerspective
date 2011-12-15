@@ -28,7 +28,7 @@ h2 {
 }
 div.scene {
 	float: left;
-	margin-top: 100px;
+	margin-top: 70px;
 }
 
 ol.description, ul.credits {
@@ -36,8 +36,8 @@ ol.description, ul.credits {
 	margin-top: 140px;
 }
 
-ol.description {
-	margin-left: 25px;
+ol.description h2, ol.description li, ol.description div {
+	margin-left: 45px;
 }
 
 ul.credits {
@@ -61,6 +61,10 @@ p {
 
 div.creator {
 	margin: 10px 0 10px 0;
+}
+
+div.creator iframe {
+	margin-right: 10px;
 }
 
 div.creator p {
